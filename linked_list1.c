@@ -36,6 +36,7 @@ struct Node *create_linked_list(int arr[], int size)
         temp = (struct Node *)malloc(sizeof(Node));
         temp->data = arr[i];
         temp->next = NULL;
+
         if(head == NULL)
         {
             head = temp;
