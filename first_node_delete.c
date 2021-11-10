@@ -25,7 +25,7 @@ int main(void)
     head = n2;
     print_list(head);
 
-    head = remove_node(head, n1); // Remove first node
+    head = remove_node(head, n1); // Remove any node
     print_list(head);
 
     return 0;
