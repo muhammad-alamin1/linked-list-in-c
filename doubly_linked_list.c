@@ -55,6 +55,8 @@ Node *create_node(int item, Node *next, Node *prev)
     new_node->data = item;
     new_node->next = next;
     new_node->prev = prev;
+
+    return new_node;
 }
 
 // print doubly linked list
@@ -123,8 +125,6 @@ Node *remove_node(Node *head, Node *node)
 void insert(Node *node, int item)
 {
     Node *new_node = create_node(item, node->next, node->prev);
-
-
 
     new_node->next = node->next;
     node->next = new_node;
